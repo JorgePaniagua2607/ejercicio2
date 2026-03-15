@@ -1,4 +1,4 @@
-public class FuncionesAritmeticas {
+public class Aritmetica {
     
     /**
      * Calcula la Tasa Metabólica Basal (TMB)
@@ -17,7 +17,7 @@ public class FuncionesAritmeticas {
         // === Jorge Paniagua ===
         // 1. Llamada para un hombre (s = 5)
         // Datos: 80kg, 180cm, 30 años
-        double tmbHombre = FuncionesAritmeticas.calcularTMB_Paniagua_Jorge(80.0, 180.0, 30, 5);
+        double tmbHombre = Aritmetica.calcularTMB_Paniagua_Jorge(80.0, 180.0, 30, 5);
         System.out.println("TMB para hombre: " + tmbHombre + " calorías/día");
     }
 
