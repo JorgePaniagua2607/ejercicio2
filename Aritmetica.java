@@ -22,7 +22,11 @@ public class Aritmetica {
         double radianes = Math.toRadians(grados);
         return Math.cos(radianes);
     }
-
+    public static double distancia_Aranibar_Madahi(double x1, double y1, double x2, double y2){
+    double distancia;
+    distancia = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+    return distancia;
+}
     public static void main(String[] args) {
  
         // === Jorge Paniagua ===
@@ -42,6 +46,10 @@ public class Aritmetica {
         double angulo = 60.0;
         System.out.println("El coseno de " + angulo + " grado es: " +  cosenoGrados_FigueroaRodrigo(angulo));
 
+
+        // === Madahi Aranibar ===
+        double distancia = Aritmetica.distancia_Aranibar_Madahi(2,3,6,7);
+        System.out.println("Distancia entre puntos: " + distancia);
     }
 
 }
