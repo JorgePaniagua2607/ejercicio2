@@ -22,11 +22,23 @@ public class Aritmetica {
         double radianes = Math.toRadians(grados);
         return Math.cos(radianes);
     }
+
     public static double distancia_Aranibar_Madahi(double x1, double y1, double x2, double y2){
     double distancia;
     distancia = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
     return distancia;
 }
+
+	public static long factorial_Alcocer_Ninel(int n) {
+    long resultado = 1;
+
+		for(int i = 1; i <= n; i++) {
+        resultado *= i;
+		}
+
+    return resultado;
+	}
+
     public static void main(String[] args) {
  
         // === Jorge Paniagua ===
@@ -50,6 +62,11 @@ public class Aritmetica {
         // === Madahi Aranibar ===
         double distancia = Aritmetica.distancia_Aranibar_Madahi(2,3,6,7);
         System.out.println("Distancia entre puntos: " + distancia);
+
+		// === Ninel Alcocer ===
+		int num = 5;
+		System.out.println("Factorial de " + num + " es: " + factorial_Alcocer_Ninel(num));
+
     }
 
 }
