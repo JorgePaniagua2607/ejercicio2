@@ -22,6 +22,16 @@ public class Aritmetica {
         double radianes = Math.toRadians(grados);
         return Math.cos(radianes);
     }
+	
+	public static long factorial_Alcocer_Ninel(int n) {
+    long resultado = 1;
+
+		for(int i = 1; i <= n; i++) {
+        resultado *= i;
+		}
+
+    return resultado;
+	}
 
     public static void main(String[] args) {
  
@@ -42,6 +52,10 @@ public class Aritmetica {
         double angulo = 60.0;
         System.out.println("El coseno de " + angulo + " grado es: " +  cosenoGrados_FigueroaRodrigo(angulo));
 
+
+		// === Ninel Alcocer ===
+		int num = 5;
+		System.out.println("Factorial de " + num + " es: " + factorial_Alcocer_Ninel(num));
     }
 
 }
