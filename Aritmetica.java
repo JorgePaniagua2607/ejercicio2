@@ -14,10 +14,15 @@ public class Aritmetica {
         return (10 * peso) + (6.25 * altura) - (5 * edad) + s;
     }
 
+    public static double porcentaje_Cardenas_Lia(double valor, double porcentaje) {
+        return valor * porcentaje / 100;
+    }
+
     public static double cosenoGrados_FigueroaRodrigo(double grados){
         double radianes = Math.toRadians(grados);
         return Math.cos(radianes);
     }
+
     public static void main(String[] args) {
  
         // === Jorge Paniagua ===
@@ -26,9 +31,17 @@ public class Aritmetica {
         double tmbHombre = Aritmetica.calcularTMB_Paniagua_Jorge(80.0, 180.0, 30, 5);
         System.out.println("TMB para hombre: " + tmbHombre + " calorías/día");
         
+        // === Lia Cardenas ===
+        double valor = 200;
+        double porcentaje = 20;
+        double resultado = porcentaje_Cardenas_Lia(valor, porcentaje);
+        System.out.println("El " + porcentaje + "% de " + valor + " es: " + resultado);
+   
+        
         // === Rodrigo Figueroa ===
         double angulo = 60.0;
         System.out.println("El coseno de " + angulo + " grado es: " +  cosenoGrados_FigueroaRodrigo(angulo));
+
     }
 
 }
