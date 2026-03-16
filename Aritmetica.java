@@ -39,6 +39,15 @@ public class Aritmetica {
     return resultado;
 	}
 
+    public static int mcd_Jhilmer_Chinchilla(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
     public static void main(String[] args) {
  
         // === Jorge Paniagua ===
@@ -66,6 +75,13 @@ public class Aritmetica {
 		// === Ninel Alcocer ===
 		int num = 5;
 		System.out.println("Factorial de " + num + " es: " + factorial_Alcocer_Ninel(num));
+
+        // ===  Jhilmer Chinchilla ===
+        int num1 = 48;
+        int num2 = 18;
+        System.out.println("El MCD de " + num1 + " y " + num2 +"es " + mcd_Jhilmer_Chinchilla(num1,num2));
+
+        
 
     }
 
