@@ -46,7 +46,11 @@ public class Aritmetica {
         a = temp;
     }
     return a;
-}
+    }
+
+    public static double raizCuadrada_Alba_Cristhian(double numero) {
+        return Math.sqrt(numero);
+    }
 
     public static void main(String[] args) {
  
@@ -85,6 +89,10 @@ public class Aritmetica {
         double celsius = 25.0;
         double fahrenheit = celsiusToFahrenheit_Torrico_JorgeDavid(celsius);
         System.out.println(celsius + "°C equivalen a " + fahrenheit + "°F");
+
+        // === Cristhian Alba Zapata ===
+        double numRaiz = 25.0;
+        System.out.println("La raiz cuadrada de " + numRaiz + " es: " + raizCuadrada_Alba_Cristhian(numRaiz));
 
     }
 
