@@ -81,7 +81,10 @@ public class Aritmetica {
         int num2 = 18;
         System.out.println("El MCD de " + num1 + " y " + num2 +"es " + mcd_Jhilmer_Chinchilla(num1,num2));
 
-        
+         // === Jorge David Torrico Copali ===
+        double celsius = 25.0;
+        double fahrenheit = celsiusToFahrenheit_Torrico_JorgeDavid(celsius);
+        System.out.println(celsius + "°C equivalen a " + fahrenheit + "°F");
 
     }
 
