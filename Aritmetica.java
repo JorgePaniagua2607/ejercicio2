@@ -52,6 +52,16 @@ public class Aritmetica {
         return Math.sqrt(numero);
     }
 
+    public static double ecuasPG_Melby_Mendoza(double a, double b){
+        double x = 0;
+        if(a==0){
+            x =-1;
+        }else{
+            x = -b/a;
+        }
+        return x;
+    }
+
     public static void main(String[] args) {
  
         // === Jorge Paniagua ===
@@ -94,6 +104,10 @@ public class Aritmetica {
         double numRaiz = 25.0;
         System.out.println("La raiz cuadrada de " + numRaiz + " es: " + raizCuadrada_Alba_Cristhian(numRaiz));
 
+        // === Melby Kelym Mendoza Mamani ===
+        double a = 34.7;
+        double b = 67.8;
+        System.out.println("EL resultado es:"+ ecuasPG_Melby_Mendoza(a,b));
     }
 
 }
