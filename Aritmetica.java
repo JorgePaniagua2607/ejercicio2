@@ -50,7 +50,6 @@ public class Aritmetica {
         return Math.sqrt(numero);
     }
 
-<<<<<<< HEAD
     public static double ecuasPG_Melby_Mendoza(double a, double b){
         double x = 0;
         if(a==0){
@@ -59,7 +58,8 @@ public class Aritmetica {
             x = -b/a;
         }
         return x;
-=======
+    }
+
     /**
      * Convierte grados Celsius a Fahrenheit.
      * @param celsius Temperatura en grados Celsius
@@ -67,8 +67,8 @@ public class Aritmetica {
      */
     public static double celsiusToFahrenheit_Torrico_JorgeDavid(double celsius) {
         return (celsius * 9/5) + 32;
->>>>>>> feature/conversion_Torrico_jorge
     }
+
 
     public static void main(String[] args) {
 
